@@ -28,15 +28,15 @@ Project File Date:  07/16/2022
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling main.c...
-main.c(19): warning:  #61-D: integer operation result is out of range
+main.c(25): warning:  #61-D: integer operation result is out of range
   		GPIOD->BSRR |= (1 << 31);   // Reset pin PD15
-main.c(19): warning:  #68-D: integer conversion resulted in a change of sign
+main.c(25): warning:  #68-D: integer conversion resulted in a change of sign
   		GPIOD->BSRR |= (1 << 31);   // Reset pin PD15
-main.c(99): warning:  #1-D: last line of file ends without a newline
+main.c(108): warning:  #1-D: last line of file ends without a newline
   }
 main.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=636 RO-data=424 RW-data=0 ZI-data=1632  
+Program Size: Code=728 RO-data=424 RW-data=0 ZI-data=1632  
 ".\Objects\LED.axf" - 0 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -63,12 +63,12 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.5.0
 
    * Component: Keil::Device:Startup:2.6.3
-      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
-      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
-      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f411xe.s
       Source file:   MDK\Device\Source\ARM\STM32F411xx_OPT.s
-Build Time Elapsed:  00:00:01
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:00
 </pre>
 </body>
 </html>

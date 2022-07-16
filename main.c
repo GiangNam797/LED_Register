@@ -14,8 +14,14 @@
 		
 		while(1)
 		{
+		GPIOD->BSRR |= (1<<12);
+		GPIOD->BSRR |= (1<<13);
+		GPIOD->BSRR |= (1<<14);
 		GPIOD->BSRR |= (1<<15);  						// Set the pin PD15
 		delay (10000000); 
+		GPIOD->BSRR |= (1 << 28);
+		GPIOD->BSRR |= (1 << 29);
+		GPIOD->BSRR |= (1 << 30);
 		GPIOD->BSRR |= (1 << 31);   // Reset pin PD15
 		delay (10000000); 
 		}
@@ -87,6 +93,9 @@
 	
 	// 2. Set the Pin as OUTPUT
 	GPIOD->MODER |= (1<<30);  // pin PD15(bits 31:30) as Output (01)
+	GPIOD->MODER |= (1<<28);
+	GPIOD->MODER |= (1<<26);
+	GPIOD->MODER |= (1<<24);
 	
 	// 3. Configure the OUTPUT MODE
 	GPIOD->OTYPER = 0;
